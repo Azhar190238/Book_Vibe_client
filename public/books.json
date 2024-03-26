@@ -34,7 +34,7 @@
         "totalPages": 281,
         "rating": 4.7,
         "category": "Fiction",
-        "tags": ["Coming-of-age", "Legal Drama", "Southern Gothic"],
+        "tags": ["Coming", "Legal", "Southern Gothic"],
         "publisher": "J. B. Lippincott & Co.",
         "yearOfPublishing": 1960
     },
@@ -60,7 +60,7 @@
         "totalPages": 224,
         "rating": 4.4,
         "category": "Fiction",
-        "tags": ["Coming-of-age", "Bildungsroman", "Cultural Critique"],
+        "tags": ["Bildungsroman", "Cultural"],
         "publisher": "Little, Brown and Company",
         "yearOfPublishing": 1951
     },
@@ -92,7 +92,7 @@
     },
     {
         "id":8,
-        "bookName": "Harry Potter and the Philosopher's Stone",
+        "bookName": "Harry Potter",
         "author": "J. K. Rowling",
         "image": "https://i.ibb.co/R299gJm/kindpng-2193744-1.png",
         "review": "  Holden's cynical yet vulnerable voice exposes the hypocrisy and phoniness of the adult world, making him a relatable and enduring character. With its raw honesty and emotional depth, The Catcher in the Rye continues to inspire generations of readers, provoking introspection and empathy for the struggles of youth.",
