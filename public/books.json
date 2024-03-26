@@ -1,10 +1,10 @@
 [
     {
-        "bookId": 1,
+        "id":1,
         "bookName": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
         "image": "https://i.ibb.co/qdqBNCk/kindpng-81724-1.png",
-        "review": "A timeless classic depicting the decadence and disillusionment of the American Dream.",
+        "review": "  Holden's cynical yet vulnerable voice exposes the hypocrisy and phoniness of the adult world, making him a relatable and enduring character. With its raw honesty and emotional depth, The Catcher in the Rye continues to inspire generations of readers, provoking introspection and empathy for the struggles of youth.",
         "totalPages": 180,
         "rating": 4.5,
         "category": "Fiction",
@@ -13,11 +13,11 @@
         "yearOfPublishing": 1925
     },
     {
-        "bookId": 2,
+        "id":2,
         "bookName": "1984",
         "author": "George Orwell",
         "image": "https://i.ibb.co/GCJvyq0/pngwing-1.png",
-        "review": "A chilling portrayal of a dystopian society where individualism is suppressed.",
+        "review": "  Holden's cynical yet vulnerable voice exposes the hypocrisy and phoniness of the adult world, making him a relatable and enduring character. With its raw honesty and emotional depth, The Catcher in the Rye continues to inspire generations of readers, provoking introspection and empathy for the struggles of youth.",
         "totalPages": 328,
         "rating": 4.8,
         "category": "Science",
@@ -26,11 +26,11 @@
         "yearOfPublishing": 1949
     },
     {
-        "bookId": 3,
+        "id":3,
         "bookName": "To Kill a Mockingbird",
         "author": "Harper Lee",
         "image": "https://i.ibb.co/t2KQm3h/kindpng-2592315-1.png",
-        "review": "A poignant exploration of racial injustice and moral growth in the American South.",
+        "review": "  Holden's cynical yet vulnerable voice exposes the hypocrisy and phoniness of the adult world, making him a relatable and enduring character. With its raw honesty and emotional depth, The Catcher in the Rye continues to inspire generations of readers, provoking introspection and empathy for the struggles of youth.",
         "totalPages": 281,
         "rating": 4.7,
         "category": "Fiction",
@@ -39,11 +39,11 @@
         "yearOfPublishing": 1960
     },
     {
-        "bookId": 4,
+        "id":4,
         "bookName": "Pride and Prejudice",
         "author": "Jane Austen",
         "image": "https://i.ibb.co/JsNCv6P/kindpng-4022054-1.png",
-        "review": "A sparkling comedy of manners featuring memorable characters and timeless romance.",
+        "review": "  Holden's cynical yet vulnerable voice exposes the hypocrisy and phoniness of the adult world, making him a relatable and enduring character. With its raw honesty and emotional depth, The Catcher in the Rye continues to inspire generations of readers, provoking introspection and empathy for the struggles of youth.",
         "totalPages": 279,
         "rating": 4.6,
         "category": "Fiction",
@@ -52,11 +52,11 @@
         "yearOfPublishing": 1813
     },
     {
-        "bookId": 5,
+        "id":5,
         "bookName": "The Catcher in the Rye",
         "author": "J. D. Salinger",
         "image": "https://i.ibb.co/fSJ3h4h/kindpng-5624060-1-1.png",
-        "review": "A provocative exploration of teenage angst and rebellion against societal norms.",
+        "review": "  Holden's cynical yet vulnerable voice exposes the hypocrisy and phoniness of the adult world, making him a relatable and enduring character. With its raw honesty and emotional depth, The Catcher in the Rye continues to inspire generations of readers, provoking introspection and empathy for the struggles of youth.",
         "totalPages": 224,
         "rating": 4.4,
         "category": "Fiction",
@@ -65,11 +65,11 @@
         "yearOfPublishing": 1951
     },
     {
-        "bookId": 6,
+        "id":6,
         "bookName": "The Hobbit",
         "author": "J. R. R. Tolkien",
         "image": "https://i.ibb.co/KjkZ9St/kindpng-4945926-1.png",
-        "review": "An enchanting adventure filled with memorable characters and mythical creatures.",
+        "review": "  Holden's cynical yet vulnerable voice exposes the hypocrisy and phoniness of the adult world, making him a relatable and enduring character. With its raw honesty and emotional depth, The Catcher in the Rye continues to inspire generations of readers, provoking introspection and empathy for the struggles of youth.",
         "totalPages": 310,
         "rating": 4.9,
         "category": "Fantasy",
@@ -78,11 +78,11 @@
         "yearOfPublishing": 1937
     },
     {
-        "bookId": 7,
+        "id":7,
         "bookName": "The Lord of the Rings",
         "author": "J. R. R. Tolkien",
         "image": "https://i.ibb.co/Km09Y8R/kindpng-1064993.png",
-        "review": "A sweeping epic saga set in a richly imagined world, exploring themes of heroism, friendship, and power.",
+        "review": "  Holden's cynical yet vulnerable voice exposes the hypocrisy and phoniness of the adult world, making him a relatable and enduring character. With its raw honesty and emotional depth, The Catcher in the Rye continues to inspire generations of readers, provoking introspection and empathy for the struggles of youth.",
         "totalPages": 1178,
         "rating": 4.9,
         "category": "Fantasy",
@@ -91,11 +91,11 @@
         "yearOfPublishing": 1954
     },
     {
-        "bookId": 8,
+        "id":8,
         "bookName": "Harry Potter and the Philosopher's Stone",
         "author": "J. K. Rowling",
         "image": "https://i.ibb.co/R299gJm/kindpng-2193744-1.png",
-        "review": "A magical journey into a world of wizards, witches, and wonder.",
+        "review": "  Holden's cynical yet vulnerable voice exposes the hypocrisy and phoniness of the adult world, making him a relatable and enduring character. With its raw honesty and emotional depth, The Catcher in the Rye continues to inspire generations of readers, provoking introspection and empathy for the struggles of youth.",
         "totalPages": 320,
         "rating": 4.7,
         "category": "Fantasy",
@@ -104,11 +104,11 @@
         "yearOfPublishing": 1997
     },
     {
-        "bookId": 9,
+        "id":9,
         "bookName": "The Da Vinci Code",
         "author": "Dan Brown",
         "image": "https://i.ibb.co/1J9DtD5/kindpng-7318921.png",
-        "review": "A gripping thriller unraveling the secrets of art, history, and religion.",
+        "review": "  Holden's cynical yet vulnerable voice exposes the hypocrisy and phoniness of the adult world, making him a relatable and enduring character. With its raw honesty and emotional depth, The Catcher in the Rye continues to inspire generations of readers, provoking introspection and empathy for the struggles of youth.",
         "totalPages": 454,
         "rating": 4.2,
         "category": "Mystery",
@@ -117,3 +117,4 @@
         "yearOfPublishing": 2003
     }
 ]
+

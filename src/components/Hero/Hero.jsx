@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Hero = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
     <div className="space-y-16">
       <h1 className="text-6xl  font-bold">Books to freshen up <br /> your bookshelf</h1>
       
-      <button className=" bg-[#23BE0A] text-white font-bold text-xl  btn ">View The List</button>
+     <Link to={'/listed'}><button className=" bg-[#23BE0A] text-white font-bold text-xl  btn ">View The List</button></Link> 
     </div>
   </div>
 </div>
