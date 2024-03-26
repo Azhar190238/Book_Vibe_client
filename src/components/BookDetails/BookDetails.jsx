@@ -1,11 +1,57 @@
-import { useLoaderData, useParams } from "react-router-dom";
+// import { useLoaderData, useParams } from "react-router-dom";
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+// import { readBooks } from "../../utility/localstorage";
 
+// const BookDetails = () => {
+//   const books = useLoaderData();
+//   const { id } = useParams();
+//   const idInt=parseInt(id);
+//   const book = books.find(book => book.id === idInt);
+//   const handleApplyBook=()=>{
+//   //   readBooks(idInt);
+//   // toast('Added read successfully');
+//   }
+  // const handleAddToWishlist=()=>{
+  //   readBooks(book);
+  // toast('Added wished successfully');
+  // }
+  import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { getStoredReadBooks, readBooks,addToWishlist, getStoredWishlist } from "../../utility/localstorage"; // Importing functions from localstorage utility
 
 const BookDetails = () => {
   const books = useLoaderData();
   const { id } = useParams();
-  const book = books.find(book => book.id == id);
-  console.log(book);
+  const idInt = parseInt(id);
+  const book = books.find(book => book.id === idInt);
+
+  const handleAddToBook = () => {
+    const alreadyRead = getStoredReadBooks().includes(idInt);
+    if (alreadyRead) {
+      toast.error("This book is already added to the Read list.");
+    } else {
+      readBooks(idInt); // Passing ID to readBooks function
+      toast.success("Book added to Read list successfully.");
+    }
+  };
+  const handleAddToWishlist = () => {
+    const alreadyInWishlist = getStoredWishlist().includes(idInt);
+    const alreadyRead = getStoredReadBooks().includes(idInt);
+  
+    if (alreadyInWishlist) {
+      toast.error("This book is already in your wishlist.");
+    } else if (alreadyRead) {
+      toast.error("This book is already in your Read list.");
+    } else {
+      addToWishlist(idInt); // Passing ID to addToWishlist function
+      toast.success("Book added to wishlist successfully.");
+    }
+  };
+  
+
+
   return (
 
     <div className=" flex flex-col md:flex-row  bg-base-100 shadow-xl gap-8 my-10">
@@ -49,11 +95,12 @@ const BookDetails = () => {
                       
                         
         <div className="card-actions gap-5 ">
-          <button className="btn border-green-500">Read</button>
-          <button className="btn bg-[#50B1C9] text-white">Wishlist</button>
+          <button onClick={handleAddToBook}  className="btn border-green-500">Read</button>
+          <button onClick={handleAddToWishlist} className="btn bg-[#50B1C9] text-white">Wishlist</button>
         </div>
        
       </div>
+      <ToastContainer />
     </div>
 
 
@@ -61,3 +108,4 @@ const BookDetails = () => {
 };
 
 export default BookDetails;
+
