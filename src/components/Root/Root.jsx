@@ -1,16 +1,15 @@
 import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
-// import Body from "../Body/Body";
-// import Home from "../Home/Home";
+import Footer from "../Footer/Footer";
+
 
 
 const Root = () => {
     return (
-        <div className="mx-20 my-10">
+        <div className="md:mx-20 my-10">
           <Header></Header>
-         
           <Outlet></Outlet>
-       
+          <Footer></Footer>
 
         </div>
     );

@@ -1,22 +1,5 @@
-// import { useLoaderData, useParams } from "react-router-dom";
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
-// import { readBooks } from "../../utility/localstorage";
 
-// const BookDetails = () => {
-//   const books = useLoaderData();
-//   const { id } = useParams();
-//   const idInt=parseInt(id);
-//   const book = books.find(book => book.id === idInt);
-//   const handleApplyBook=()=>{
-//   //   readBooks(idInt);
-//   // toast('Added read successfully');
-//   }
-  // const handleAddToWishlist=()=>{
-  //   readBooks(book);
-  // toast('Added wished successfully');
-  // }
-  import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { getStoredReadBooks, readBooks,addToWishlist, getStoredWishlist } from "../../utility/localstorage"; // Importing functions from localstorage utility
@@ -32,7 +15,7 @@ const BookDetails = () => {
     if (alreadyRead) {
       toast.error("This book is already added to the Read list.");
     } else {
-      readBooks(idInt); // Passing ID to readBooks function
+      readBooks(idInt); 
       toast.success("Book added to Read list successfully.");
     }
   };
@@ -45,7 +28,7 @@ const BookDetails = () => {
     } else if (alreadyRead) {
       toast.error("This book is already in your Read list.");
     } else {
-      addToWishlist(idInt); // Passing ID to addToWishlist function
+      addToWishlist(idInt);
       toast.success("Book added to wishlist successfully.");
     }
   };
@@ -95,7 +78,7 @@ const BookDetails = () => {
                       
                         
         <div className="card-actions gap-5 ">
-          <button onClick={handleAddToBook}  className="btn border-green-500">Read</button>
+          <button onClick={handleAddToBook} className="btn border-green-500">Read</button>
           <button onClick={handleAddToWishlist} className="btn bg-[#50B1C9] text-white">Wishlist</button>
         </div>
        

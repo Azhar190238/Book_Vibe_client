@@ -5,6 +5,7 @@ import WishlistBooks from "../WishlistBooks/WishlistBooks";
 import ReadBooks from "../ReadBooks/ReadBooks";
 import { useEffect, useState } from "react";
 import { getStoredReadBooks, getStoredWishlist } from "../../utility/localstorage";
+import PagesToRead from "../PagesToRead/PagesToRead";
 
 const ListedBooks = () => {
   const books = useLoaderData();
@@ -84,18 +85,19 @@ const ListedBooks = () => {
       <div>
         <div role="tablist" className="tabs tabs-lifted">
           <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium" aria-label="Read Books" checked />
-          <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
+          <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box md:p-6">
             <div>
               <ul>
                 {displayBooks.map((oneBook) => (
                   <ReadBooks key={oneBook.id} oneBook={oneBook}></ReadBooks>
+                  
                 ))}
               </ul>
             </div>
           </div>
 
           <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium" aria-label="Wishlist Books" />
-          <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
+          <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box md:p-6">
             <div>
               <ul>
                 {whishedBook.map((oneBook) => (

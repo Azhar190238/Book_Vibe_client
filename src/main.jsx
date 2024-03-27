@@ -11,6 +11,9 @@ import ListedBooks from './components/ListedBooks/ListedBooks';
 import PagesToRead from './components/PagesToRead/PagesToRead';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import BookDetails from './components/BookDetails/BookDetails';
+// import Recommendations from './components/Recommendations/Recommendations';
+import Goals from './components/Goals/Goals';
+import Recommendations from './components/Recommendations/Recommendations';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: "/pages",
         element : <PagesToRead></PagesToRead> ,
+      },
+      {
+        path: "/recommendations",
+        element :<Recommendations></Recommendations>
+      },
+      {
+        path: "/goals",
+        element : <Goals></Goals> ,
       },
       {
         path: "/book/:id",

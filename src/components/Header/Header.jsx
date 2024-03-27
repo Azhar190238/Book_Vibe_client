@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 const Header = () => {
 
@@ -7,6 +7,8 @@ const Header = () => {
             <li><NavLink  to='/' ClassName='text-[#23BE0A]'>Home</NavLink></li>
             <li><NavLink to='/listed' ClassName='text-[#23BE0A]'>Listed Books</NavLink></li>
             <li><NavLink to='/pages' activeClassName="active-link">Pages to Read</NavLink></li>
+            <li><NavLink to='/recommendations' ClassName='text-[#23BE0A]'>Book Recommendations</NavLink></li>
+            <li><NavLink to='/goals' activeClassName="active-link">Reading Goals</NavLink></li>
         </>
     );
 
@@ -23,7 +25,7 @@ const Header = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-3xl font-bold">Book Vibe </a>
+                 <a href="/" className="btn btn-ghost text-3xl font-bold"> Book Vibe</a> 
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal font-semibold bg-white text-lg space-x-3">

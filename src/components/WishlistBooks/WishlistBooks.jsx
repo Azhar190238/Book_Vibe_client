@@ -6,17 +6,17 @@ const WishlistBooks = ({oneBook}) => {
     return (
         <div className='mt-10'>
            
-            {<div className="card card-side bg-base-100  shadow-xl">
-                <figure className='bg-slate-100 rounded-lg' ><img src={image} className='w-40 p-8 m-5' alt="Movie" /></figure>
+            {<div className="md:card md:card-side md:bg-base-100  shadow-xl">
+                <figure className='md:bg-slate-100 rounded-lg' ><img src={image} className='w-64 md:w-40 pl-20 md:p-8 md:m-5' alt="Movie" /></figure>
                 <div className="card-body">
                     <h2 className="card-title font-bold text-2xl">{bookName}</h2>
                     <p className='text-xl font-medium'>By :<span>{author}</span></p>
-                    <div className='flex gap-10   text-xl font-semibold text-[#23BE0A]'>
+                    <div className='flex gap-2 md:gap-10   text-xl font-semibold text-[#23BE0A]'>
                         <h1 className="font-bold text-black">Tag</h1>
-                        <h1 className='bg-slate-100 px-6 py-2 rounded-2xl'>#<span>{oneBook.tags[0]}</span></h1>
-                        <h1 className='bg-slate-100 px-6 py-2 rounded-2xl'>#<span>{oneBook.tags[1]}</span></h1>
+                        <h1 className='bg-slate-100 px-2 md:px-6 md:py-2 rounded-2xl'>#<span>{oneBook.tags[0]}</span></h1>
+                        <h1 className='bg-slate-100 px-2 md:px-6 py-2 rounded-2xl'>#<span>{oneBook.tags[1]}</span></h1>
 
-                        <div className='flex items-center'>
+                        <div className='md:flex items-center'>
                             <img src={'https://i.ibb.co/74MJRg2/Frame-2.png'} alt="" className="mr-2" />
                             <h1 className='text-black font-light m-0'>Year of Publishing: <span>{yearOfPublishing}</span></h1>
                         </div>
