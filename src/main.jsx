@@ -33,6 +33,7 @@ const router = createBrowserRouter([
       {
         path: "/pages",
         element : <PagesToRead></PagesToRead> ,
+       
       },
       {
         path: "/recommendations",
